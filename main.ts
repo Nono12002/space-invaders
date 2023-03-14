@@ -20,12 +20,12 @@ input.onPinPressed(TouchPin.P1, function () {
     }
     Bullet_2.delete()
 })
-let Set = false
 let Bullet_2: game.LedSprite = null
 let Bullet_1: game.LedSprite = null
 let Ship: game.LedSprite = null
 Ship = game.createSprite(2, 4)
 let Alien_1 = game.createSprite(0, 0)
+let Set = true
 basic.forever(function () {
     while (Set == true) {
         for (let index = 0; index < 4; index++) {
@@ -48,11 +48,13 @@ basic.forever(function () {
     if (Alien_1.isTouching(Bullet_1)) {
         Alien_1.delete()
         Set = false
+        Alien_1 = game.createSprite(0, 0)
+        Set = true
     }
     if (Alien_1.isTouching(Bullet_2)) {
         Alien_1.delete()
         Set = false
+        Alien_1 = game.createSprite(0, 0)
+        Set = true
     }
-    Set = true
-    Alien_1 = game.createSprite(0, 0)
 })

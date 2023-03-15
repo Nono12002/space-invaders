@@ -76,6 +76,68 @@ basic.forever(function () {
         }
         Alien_2.turn(Direction.Right, 90)
     }
+    if (Bullet_1.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
+        if (Bullet_1.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
+            game.addScore(1)
+            Alien_1.delete()
+            Set_1 = false
+            Alien_1 = game.createSprite(0, 0)
+            Set_1 = true
+        }
+    } else {
+        if (Bullet_2.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
+            if (Bullet_2.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
+                game.addScore(1)
+                Alien_1.delete()
+                Set_1 = false
+                Alien_1 = game.createSprite(0, 0)
+                Set_1 = true
+            }
+        } else {
+            if (Bullet_3.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
+                if (Bullet_3.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
+                    game.addScore(1)
+                    Alien_1.delete()
+                    Set_1 = false
+                    Alien_1 = game.createSprite(0, 0)
+                    Set_1 = true
+                }
+            } else {
+                if (Bullet_1.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
+                    if (Bullet_1.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
+                        game.addScore(1)
+                        Alien_2.delete()
+                        Set_2 = false
+                        Alien_2 = game.createSprite(4, 0)
+                        Alien_2.turn(Direction.Right, 180)
+                        Set_2 = true
+                    }
+                } else {
+                    if (Bullet_2.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
+                        if (Bullet_2.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
+                            game.addScore(1)
+                            Alien_2.delete()
+                            Set_2 = false
+                            Alien_2 = game.createSprite(4, 0)
+                            Alien_2.turn(Direction.Right, 180)
+                            Set_2 = true
+                        }
+                    } else {
+                        if (Bullet_3.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
+                            if (Bullet_3.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
+                                game.addScore(1)
+                                Alien_2.delete()
+                                Set_2 = false
+                                Alien_2 = game.createSprite(4, 0)
+                                Alien_2.turn(Direction.Right, 180)
+                                Set_2 = true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 })
 basic.forever(function () {
     while (Set_1 == true) {
@@ -112,6 +174,68 @@ basic.forever(function () {
         }
         Alien_1.turn(Direction.Left, 90)
     }
+    if (Bullet_1.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
+        if (Bullet_1.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
+            game.addScore(1)
+            Alien_1.delete()
+            Set_1 = false
+            Alien_1 = game.createSprite(0, 0)
+            Set_1 = true
+        }
+    } else {
+        if (Bullet_2.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
+            if (Bullet_2.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
+                game.addScore(1)
+                Alien_1.delete()
+                Set_1 = false
+                Alien_1 = game.createSprite(0, 0)
+                Set_1 = true
+            }
+        } else {
+            if (Bullet_3.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
+                if (Bullet_3.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
+                    game.addScore(1)
+                    Alien_1.delete()
+                    Set_1 = false
+                    Alien_1 = game.createSprite(0, 0)
+                    Set_1 = true
+                }
+            } else {
+                if (Bullet_1.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
+                    if (Bullet_1.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
+                        game.addScore(1)
+                        Alien_2.delete()
+                        Set_2 = false
+                        Alien_2 = game.createSprite(4, 0)
+                        Alien_2.turn(Direction.Right, 180)
+                        Set_2 = true
+                    }
+                } else {
+                    if (Bullet_2.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
+                        if (Bullet_2.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
+                            game.addScore(1)
+                            Alien_2.delete()
+                            Set_2 = false
+                            Alien_2 = game.createSprite(4, 0)
+                            Alien_2.turn(Direction.Right, 180)
+                            Set_2 = true
+                        }
+                    } else {
+                        if (Bullet_3.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
+                            if (Bullet_3.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
+                                game.addScore(1)
+                                Alien_2.delete()
+                                Set_2 = false
+                                Alien_2 = game.createSprite(4, 0)
+                                Alien_2.turn(Direction.Right, 180)
+                                Set_2 = true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 })
 basic.forever(function () {
     if (Alien_1.isTouching(Ship)) {
@@ -123,6 +247,11 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    if (game.isGameOver()) {
+        basic.showNumber(game.score())
+    }
+})
+basic.forever(function () {
     if (Alien_2.isTouching(Ship)) {
         game.removeLife(1)
         Alien_2.delete()
@@ -130,79 +259,5 @@ basic.forever(function () {
         Alien_2 = game.createSprite(4, 0)
         Alien_2.turn(Direction.Right, 180)
         Set_2 = true
-    }
-})
-basic.forever(function () {
-    if (game.isGameOver()) {
-        basic.showNumber(game.score())
-    }
-})
-basic.forever(function () {
-    if (Bullet_1.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
-        if (Bullet_1.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
-            game.addScore(1)
-            Alien_1.delete()
-            Set_1 = false
-            Alien_1 = game.createSprite(0, 0)
-            Set_1 = true
-        }
-    }
-})
-basic.forever(function () {
-    if (Bullet_2.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
-        if (Bullet_2.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
-            game.addScore(1)
-            Alien_1.delete()
-            Set_1 = false
-            Alien_1 = game.createSprite(0, 0)
-            Set_1 = true
-        }
-    }
-})
-basic.forever(function () {
-    if (Bullet_3.get(LedSpriteProperty.Y) == Alien_1.get(LedSpriteProperty.Y)) {
-        if (Bullet_3.get(LedSpriteProperty.X) == Alien_1.get(LedSpriteProperty.X)) {
-            game.addScore(1)
-            Alien_1.delete()
-            Set_1 = false
-            Alien_1 = game.createSprite(0, 0)
-            Set_1 = true
-        }
-    }
-})
-basic.forever(function () {
-    if (Bullet_1.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
-        if (Bullet_1.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
-            game.addScore(1)
-            Alien_2.delete()
-            Set_2 = false
-            Alien_2 = game.createSprite(4, 0)
-            Alien_2.turn(Direction.Right, 180)
-            Set_2 = true
-        }
-    }
-})
-basic.forever(function () {
-    if (Bullet_2.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
-        if (Bullet_2.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
-            game.addScore(1)
-            Alien_2.delete()
-            Set_2 = false
-            Alien_2 = game.createSprite(4, 0)
-            Alien_2.turn(Direction.Right, 180)
-            Set_2 = true
-        }
-    }
-})
-basic.forever(function () {
-    if (Bullet_3.get(LedSpriteProperty.Y) == Alien_2.get(LedSpriteProperty.Y)) {
-        if (Bullet_3.get(LedSpriteProperty.X) == Alien_2.get(LedSpriteProperty.X)) {
-            game.addScore(1)
-            Alien_2.delete()
-            Set_2 = false
-            Alien_2 = game.createSprite(4, 0)
-            Alien_2.turn(Direction.Right, 180)
-            Set_2 = true
-        }
     }
 })
